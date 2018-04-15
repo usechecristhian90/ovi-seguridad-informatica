@@ -1,0 +1,154 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	margin: 20px auto;
+	width: 90%;
+	max-width: 1000px;
+}
+#logo{
+	background-image: url("../imagen/logo1.jpg");
+	background-repeat:round;
+	margin: 10px auto;
+	width: 90%;
+	max-width: 1000px;
+	height: 150px;
+	border-radius: 10px;
+	margin-top:0;
+}
+header	{
+	margin-top:10px;
+	width: 100%;
+}
+
+nav{
+	margin: 20px auto;
+	width: 90%;
+	max-width: 1000px;
+}
+nav ul{ 
+	list-style: none;
+ }
+ nav > ul {
+ 	display:table;
+    width:100%;
+    background:#000;
+    position: relative;
+}
+nav  > ul li{
+	display: table-cell;
+}
+/*sub menu*/
+nav > ul > li:hover > ul {
+	display: block;
+	height: 100%;
+}
+nav > ul > li > ul {
+	display: table-column;
+	position: absolute;
+	background: #000;
+	overflow: hidden;
+	height:0%;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+
+nav > ul li a {
+	color: #fff;
+	display: block;
+	line-height: 20px;
+	padding: 20px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+nav > ul > li > ul > li a:hover {
+	background: #5da5a2;
+
+}
+nav > ul > li a span {
+	background: #174419;
+	display: block;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	position: absolute;
+	top: -55px;	
+	opacity: 0;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+nav > ul > li a span:hover {
+	background: #174419;
+	display: block;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	position: absolute;
+	opacity: 100;
+	top:-55px;	
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+nav > ul > li a span {
+	display: block;
+	line-height: 60px;
+
+}
+nav > ul > li > a:hover > span { 
+	top: 0px;
+ }
+.slider {
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 200%;	
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0px;}
+	20% {margin-left: 0px;}
+	
+	25% {margin-left: -25%;}
+	45% {margin-left: -25%;}
+	
+	50% {margin-left: -50%;}
+	70% {margin-left: -50%;}
+	
+	75% {margin-left: -100%;}
+	100% {margin-left: -100%;}
+}
+#slider{
+	margin-top: 50px;
+}

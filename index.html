@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Seguridad Informatica</title>
+	<link href="css/estilo.css" rel="stylesheet" type="text/css">
+	<link href="css/fonts.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/slicebox.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/custom.css" />
+	<script type="text/javascript" src="js/modernizr.custom.46884.js"></script>
+
+</head>
+<body>
+<div class="container">
+	<div id="logo">		
+	</div>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#"><span  class=""><i class="icon icon-home3"></i></span>Inicio</a></li>
+				<li><a href="#"><span  class=""><i class="icon icon-newspaper"></i></span>Noticias</a>
+					<ul>
+						<li><a href="#">Noticia 1</a></li>
+						<li><a href="#">Noticia 2</a></li>
+						<li><a href="#">Noticia 3</a></li>
+						<li><a href="#">Noticia 4</a></li>
+						<li><a href="#">Noticia 5</a></li>
+					</ul>
+				</li>
+				<li><a href="#"><span  class=""><i class="icon icon-images"></i></span>Galeria</a>
+					<ul>
+						<li><a href="#">Galeria 1</a></li>
+						<li><a href="#">Galeria 2</a></li>
+					</ul>
+				</li>
+				<li><a href="#"><span  class=""><i class="icon icon-barcode"></i></span>Actividades</a>
+					<ul>
+						<li><a href="#">Actividades 1</a></li>
+						<li><a href="#">Actividades 2</a></li>
+						<li><a href="#">Actividades 3</a></li>
+					</ul>
+				</li>
+				<li><a href="#"><span  class=""><i class="icon icon-user-check"></i></span>Autores</a></li>				
+			</ul>
+		</nav>
+	</header>
+
+		<div id="slider">
+		<div class="wrapper">
+
+				<ul id="sb-slider" class="sb-slider">
+					<li>
+						<a href="#"><img src="imagen/1.png" alt="image1"/></a>
+					</li>
+					<li>
+						<a href="#" ><img src="imagen/2.jpg" alt="image1"/></a>
+					</li>
+					<li>
+						<a href="#" ><img src="imagen/3.jpg" alt="image1"/></a>
+					</li>
+					<li>
+						<a href="#" ><img src="imagen/4.jpg" alt="image1"/></a>
+					</li>
+					<li>
+						<a href="#" ><img src="imagen/5.jpg" alt="image1"/></a>
+					</li>
+					
+				</ul>
+
+				<div id="shadow" class="shadow"></div>
+
+				<div id="nav-arrows" class="nav-arrows">
+					<a href="#">Next</a>
+					<a href="#">Previous</a>
+				</div>
+
+		</div>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slicebox.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				
+				var Page = (function() {
+
+					var $navArrows = $( '#nav-arrows' ).hide(),
+						$shadow = $( '#shadow' ).hide(),
+						slicebox = $( '#sb-slider' ).slicebox( {
+							onReady : function() {
+
+								$navArrows.show();
+								$shadow.show();
+
+							},
+							orientation : 'r',
+							cuboidsRandom : true
+						} ),
+						
+						init = function() {
+
+							initEvents();
+							
+						},
+						initEvents = function() {
+
+							// add navigation events
+							$navArrows.children( ':first' ).on( 'click', function() {
+
+								slicebox.next();
+								return false;
+
+							} );
+
+							$navArrows.children( ':last' ).on( 'click', function() {
+								
+								slicebox.previous();
+								return false;
+
+							} );
+
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+			});
+		</script>
+</div>
+<div>
+	<h1>SEGURIDAD INFORMATICA</h1>
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+</html>
