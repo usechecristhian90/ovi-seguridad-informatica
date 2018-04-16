@@ -6,6 +6,11 @@
 	margin: 20px auto;
 	width: 90%;
 	max-width: 1000px;
+
+}
+.container1{
+background-image: url("../imagen/fondo.png");
+	background-repeat:round;
 }
 #logo{
 	background-image: url("../imagen/logo1.jpg");
@@ -73,11 +78,11 @@ nav > ul li a {
 	transition: all .3s ease;
 }
 nav > ul > li > ul > li a:hover {
-	background: #5da5a2;
+	background: #0B2161;
 
 }
 nav > ul > li a span {
-	background: #174419;
+	background: #0B2161;
 	display: block;
 	height: 100%;
 	width: 100%;
@@ -92,7 +97,7 @@ nav > ul > li a span {
 	transition: all .3s ease;
 }
 nav > ul > li a span:hover {
-	background: #174419;
+	background: #0B2161;
 	display: block;
 	height: 100%;
 	width: 100%;
@@ -151,4 +156,44 @@ nav > ul > li > a:hover > span {
 }
 #slider{
 	margin-top: 50px;
+}
+
+#pie{
+	background-image: url("../imagen/logo1.jpg");
+	background-repeat:round;
+	margin: 10px auto;
+	width: 500px;
+	max-width: 300px;
+	height: 180px;
+	border-radius: 10px;
+	margin-top:20px;
+	margin-left: 10px;
+}
+#contenido{
+	margin: 10px auto;
+	width: 600px;
+	max-width: 1000px;
+	height: 180px;
+	border-radius: 10px;
+	margin-top:20px;
+	margin-left: 380px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	padding: 20px;
+
+}
+div > h2 {
+	margin-left: 20px;
+}
+#cont{
+	background-image: url("../imagen/fondo.png");
+	background-repeat:round;
+	margin: 10px auto;
+	width: 200px;
+	max-width: 200px;
+	height: 150px;
+	margin-top: -170px;
+	margin-right: 20px;
 }
